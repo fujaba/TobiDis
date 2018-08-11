@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="includes/diagramstyle.css" rel="stylesheet" type="text/css">
+
+<script src="includes/dagre.min.js"></script>
+<script src="includes/drawer.js"></script>
+<script src="includes/graph.js"></script>
+</head><body>
+<p>Storyboard <a href='.././src/de/uks/dss/modelcode/BasicModel.java' type='text/x-java'>basicModel</a></p>
+<script>
+   var json = {
+   "typ":"classdiagram",
+   "nodes":[
+   {
+         "typ":"node",
+         "id":"DocumentData",
+         "attributes":[
+         "tag : String",
+            "value : String",
+            "type : String",
+            "lastEditor : String",
+            "lastModified : String"
+         ]
+      },
+      {
+         "typ":"node",
+         "id":"Task"
+      },
+      {
+         "typ":"node",
+         "id":"Person"
+      }
+   ],
+   "edges":[
+   {
+         "typ":"edge",
+         "source":{
+            "id":"DocumentData",
+            "cardinality":"many",
+            "property":"subData"
+         },
+         "target":{
+            "id":"DocumentData",
+            "cardinality":"many",
+            "property":"parentData"
+         }
+      },
+      {
+         "typ":"edge",
+         "source":{
+            "id":"DocumentData",
+            "cardinality":"many",
+            "property":"taskData"
+         },
+         "target":{
+            "id":"Task",
+            "cardinality":"many",
+            "property":"tasks"
+         }
+      },
+      {
+         "typ":"edge",
+         "source":{
+            "id":"DocumentData",
+            "cardinality":"many",
+            "property":"personData"
+         },
+         "target":{
+            "id":"Person",
+            "cardinality":"many",
+            "property":"persons"
+         }
+      },
+      {
+         "typ":"edge",
+         "source":{
+            "id":"Task",
+            "cardinality":"many",
+            "property":"subTasks"
+         },
+         "target":{
+            "id":"Task",
+            "cardinality":"many",
+            "property":"parentTasks"
+         }
+      },
+      {
+         "typ":"edge",
+         "source":{
+            "id":"Task",
+            "cardinality":"many",
+            "property":"tasks"
+         },
+         "target":{
+            "id":"Person",
+            "cardinality":"many",
+            "property":"persons"
+         }
+      },
+      {
+         "typ":"edge",
+         "source":{
+            "id":"Task",
+            "cardinality":"many",
+            "property":"tasks"
+         },
+         "target":{
+            "id":"DocumentData",
+            "cardinality":"many",
+            "property":"taskData"
+         }
+      },
+      {
+         "typ":"edge",
+         "source":{
+            "id":"Person",
+            "cardinality":"many",
+            "property":"members"
+         },
+         "target":{
+            "id":"Person",
+            "cardinality":"many",
+            "property":"groups"
+         }
+      },
+      {
+         "typ":"edge",
+         "source":{
+            "id":"Person",
+            "cardinality":"many",
+            "property":"persons"
+         },
+         "target":{
+            "id":"Task",
+            "cardinality":"many",
+            "property":"tasks"
+         }
+      },
+      {
+         "typ":"edge",
+         "source":{
+            "id":"Person",
+            "cardinality":"many",
+            "property":"persons"
+         },
+         "target":{
+            "id":"DocumentData",
+            "cardinality":"many",
+            "property":"personData"
+         }
+      }
+   ]
+}   ;
+   new Graph(json, {"canvasid":"canvasbasicModelClassDiagram0", "display":"html", "fontsize":10,"bar":true}).layout(100,100);
+</script>
+<p>The basic element of data in software stories are tag value pairs like 'name' = 'Albert'. However, there may be values of different types, e.g. </p>
+<pre>&#x27;login&#x27; : &#x27;login&#x27; = &#x27;zuendorf&#x27; 
+&#x27;dateOfBirth&#x27; : &#x27;date&#x27; = &#x27;20.07.1963&#x27; 
+&#x27;phone&#x27; : &#x27;phone number&#x27; = &#x27;+49 561 804 6240&#x27; 
+&#x27;familiy&#x27; : &#x27;list of personRef&#x27; = &#x27;sabine.zuendorf, tom.zuendorf&#x27; 
+</pre><p>As each tag/value pair has a 'type', we may provide a generic javafx controller and view, that provides specific editing support for any tag value pair based on this type info. For example a list of person references might offer a choice menu pre-filled with the login or names of persons in the system.Even more specific selection lists may be provided with the help of more specific type information. </p>
+<p>Finally, any tag/value pair shall store the login of the last person that has created or changed it. And we store the time of the last modification. This helps multiple users to see how e.g. a task has evolved and whom to ask for certain data content. </p>
+<p>Multiple tag/value pairs may be grouped to a complex data record, e.g. all tag/value pairs belonging to the person record of Albert. Just because it may be cool, one tag/value pair (or complex data record) may belong to multiple parentData records. Thus, multiple people may e.g. share the same address. </p>
+<p>New tag/value pair types may be added to software stories via plugins to the javafx controller.Similarly, some logic part of the system may propose a standard set of tag/value pairs that a person record should have. </p>
+<p>Although, DocumentData may be used to model every aspects of a software story, we might also add Person and Task as specific classes as these elements have central roles in software stories.</p>
+<p>A basic data set for a software story may look like: </p>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+{
+	"thesis":[
+  {
+    "firstName_text":"Anna",
+    "name_text":"Schmidt",
+    "matNr_text":"12345678",
+    "type_combo":"Bachelor Thesis"
+    "thesis_title_text":"Customizable Workflow Support with Software Stories"
+  },
+    {"open" : [
+      {
+        "title":"Copy forms and file copies in student record",
+        "assigned":"RB"
+      },
+      {
+        "title":"Do technical work for thesis",
+        "assigned":"Anna"
+      },
+      {
+        "title":"Write thesis",
+        "assigned":"Anna"
+      },
+      {
+        "title":"Submit thesis",
+        "assigned":"Anna"
+      }
+    ]},
+   {"done" : [
+      {
+        "title":"Sign up for thesis at student's service",
+        "assigned":"TG",
+        "timestamp":"08.12.2015_11:42:23"
+      },
+   	  {
+        "title":"Discuss thesis' topics",
+        "assigned":"TG",
+        "timestamp":"04.12.2015_10:20:42"
+      },
+      {
+        "title":"Record student contact data",
+        "assigned":"TG",
+        "timestamp":"04.12.2015_10:15:23"
+      }
+    ]}
+    ]
+}

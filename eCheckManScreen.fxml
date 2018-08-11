@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1280.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uks.ludo.StartScreenController">
+	<center>
+		<VBox alignment="CENTER" prefHeight="876.0" prefWidth="728.0" spacing="20.0" BorderPane.alignment="CENTER">
+			<children>
+            <HBox alignment="CENTER" fillHeight="false" prefHeight="-1.0" prefWidth="200.0">
+               <children>
+                  <Label text="Abschlussarbeit">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+				<HBox alignment="CENTER_LEFT" fillHeight="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="-1.0" prefWidth="200.0" spacing="10.0">
+					<children>
+                  <Label text="Name" />
+						<TextField id="" fx:id="url" prefWidth="200.0" promptText="localhost" text="Copei" />
+                  <Label text="Vorname" />
+                  <TextField text="Sebastian" />
+					</children>
+				</HBox>
+            <HBox alignment="CENTER_LEFT" fillHeight="false" prefHeight="-1.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="Adresse" />
+                  <TextField id="" fx:id="url131" prefWidth="200.0" promptText="localhost" text="-" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" fillHeight="false" prefHeight="-1.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="Telefon-Nr." />
+                  <TextField id="" fx:id="url1311" prefWidth="200.0" promptText="localhost" text="-" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" fillHeight="false" prefHeight="-1.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="E-Mail" />
+                  <TextField id="" fx:id="url1" prefWidth="200.0" promptText="localhost" text="sco@cs.uni-kassel.de" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" fillHeight="false" prefHeight="-1.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="Matrikelnummer" />
+                  <TextField id="" fx:id="url13" prefWidth="200.0" promptText="localhost" text="31212715" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" fillHeight="false" prefHeight="-1.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="Studiengang" />
+                  <ComboBox prefWidth="150.0" promptText="Informatik" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" fillHeight="false" prefHeight="-1.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="Thema" />
+                  <TextArea prefHeight="71.0" prefWidth="292.0" text="AyGe Editor - Applikations Generierung nach dem&#10;MVC-Pattern" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" fillHeight="false" prefHeight="-1.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="Start" />
+                  <DatePicker promptText="01.07.2015" />
+                  <Label text="Ende" />
+                  <DatePicker promptText="02.09.2015" />
+                  <CheckBox mnemonicParsing="false" text="verlängert" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" fillHeight="false" prefHeight="-1.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="Betrieb" />
+                  <TextField id="" fx:id="url2" prefWidth="200.0" promptText="localhost" text="-" />
+                  <Label text="Betreuer im Betrieb" />
+                  <TextField text="-" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" fillHeight="false" prefHeight="-1.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="Betreuer" />
+                  <TextField id="" fx:id="url1211" prefWidth="200.0" promptText="localhost" text="Tobias" />
+                  <Label text="1. Gutachter" />
+                  <ComboBox prefHeight="25.0" prefWidth="175.0" promptText="Prof. Dr. Albert Zündorf" />
+                  <Label text="2. Gutachter" />
+                  <ComboBox prefHeight="25.0" prefWidth="175.0" promptText="Prof. Dr. Kurt Geihs" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" fillHeight="false" prefHeight="-1.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="Art der Arbeit" />
+                  <ComboBox prefWidth="150.0" promptText="Bachelorarbeit" />
+                  <CheckBox mnemonicParsing="false" text="stud. Hilfskraft" />
+                  <CheckBox mnemonicParsing="false" text="Sperrvermerk (2 Jahre)" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" fillHeight="false" prefHeight="-1.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="Schlüsselwörter" />
+                  <TextField id="" fx:id="url1312" prefHeight="25.0" prefWidth="450.0" promptText="localhost" text="application generator javafx model view contoller pattern" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" fillHeight="false" prefHeight="-1.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="Abstract" />
+                  <TextArea prefHeight="196.0" prefWidth="522.0" text="Gegenstand dieser Bachelorarbeit ist das Generieren von Desktopanwendungen nach dem&#10;Model-View-Controller (MVC)Pattern[GHJV95]. Ziel ist es, damit eine möglichst modulare&#10;Anwendung zu erhalten, die leicht zu erweitern ist. Um die gewünschte Softwarearchitektur&#10;präzise beschreiben zu können wird eine Domain-Specic-Language (DSL) eingeführt,&#10;welche als Beschreibungssprache fungiert. Diese Sprache wird von einem Codegenerator&#10;interpretiert um mithilfe von Codevorlagen, die beschriebene Anwendung zu generieren.&#10;Die Codevorlagen können vom Benutzer angepasst werden, dies ermöglicht es die Form&#10;des generierten Codes zu beeinflussen. Als Entwicklungsumgebung für die DSL wird ein&#10;eigener Editor verwendet, welcher im Zuge der Bachelorarbeit entwickelt wurde. Alle folgenden&#10;Erklärungen und Tools beziehen sich auf die Programmiersprache Java und die&#10;Oberflächenbibliothek JavaFX." />
+               </children>
+            </HBox>
+            <ListView prefHeight="200.0" prefWidth="200.0" />
+			</children>
+			<BorderPane.margin>
+				<Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+			</BorderPane.margin>
+		</VBox>
+	</center>
+</BorderPane>

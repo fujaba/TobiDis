@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1024.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uks.ludo.StartScreenController">
+	<center>
+		<VBox alignment="CENTER" prefHeight="876.0" prefWidth="728.0" spacing="20.0" BorderPane.alignment="CENTER">
+			<children>
+            <HBox alignment="CENTER" fillHeight="false" prefHeight="-1.0" prefWidth="200.0">
+               <children>
+                  <Label text="Thema" />
+                  <TextArea prefHeight="71.0" prefWidth="350.0" text="Entwurf und Entwicklung von Erweiterungen eines Frameworks&#10;zur Simulation von elektrischen Versorgungsnetzen und&#10;Lastflussanalyse unter Python" />
+               </children>
+            </HBox>
+				<HBox alignment="CENTER" fillHeight="false" prefHeight="-1.0" prefWidth="200.0">
+					<children>
+                  <Label text="Name" />
+						<TextField id="" fx:id="url" prefWidth="200.0" promptText="localhost" text="Dollichon" />
+                  <Label text="Vorname" />
+                  <TextField text="Julian" />
+					</children>
+				</HBox>
+            <HBox alignment="CENTER" fillHeight="false" prefHeight="-1.0" prefWidth="200.0">
+               <children>
+                  <Label text="Matrikelnummer" />
+                  <TextField id="" fx:id="url13" prefWidth="200.0" promptText="localhost" text="2823461" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" fillHeight="false" prefHeight="-1.0" prefWidth="200.0">
+               <children>
+                  <Label text="Adresse" />
+                  <TextField id="" fx:id="url1" prefWidth="200.0" promptText="localhost" text="jd@student.uni-kassel.de" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" fillHeight="false" prefHeight="-1.0" prefWidth="200.0">
+               <children>
+                  <Label text="Start" />
+                  <DatePicker promptText="01.04.2014" />
+                  <Label text="Ende" />
+                  <DatePicker promptText="16.06.2014" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" fillHeight="false" prefHeight="-1.0" prefWidth="200.0">
+               <children>
+                  <Label text="Betrieb" />
+                  <TextField id="" fx:id="url121" prefWidth="200.0" promptText="localhost" text="Frauenhofer IWES" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" fillHeight="false" prefHeight="-1.0" prefWidth="200.0">
+               <children>
+                  <Label text="Betreuer" />
+                  <TextField id="" fx:id="url1211" prefWidth="200.0" promptText="localhost" text="Dr. Alexander Scheidler" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" fillHeight="false" prefHeight="-1.0" prefWidth="200.0">
+               <children>
+                  <Label text="Gutachter" />
+                  <ComboBox prefHeight="25.0" prefWidth="175.0" promptText="Prof. Dr. Albert Zündorf" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" fillHeight="false" prefHeight="-1.0" prefWidth="200.0">
+               <children>
+                  <Label text="Studiengang" />
+                  <ComboBox prefWidth="150.0" promptText="Informatik" />
+               </children>
+            </HBox>
+            <ListView prefHeight="200.0" prefWidth="200.0" />
+			</children>
+			<BorderPane.margin>
+				<Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+			</BorderPane.margin>
+		</VBox>
+	</center>
+</BorderPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="5.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uks.dss.app.DebugController">
+	<children>
+		<Button fx:id="replicateToBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#replicateToDocker" text="Replicate To Docker" VBox.vgrow="ALWAYS" />
+      <Button fx:id="replicateFromBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#replicateFromDocker" text="Replicate From Docker" VBox.vgrow="ALWAYS" />
+      <Separator prefWidth="200.0" />
+      <Button fx:id="importPersonsBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#importPersons" text="Import Persons" VBox.vgrow="ALWAYS" />
+      <Separator prefWidth="200.0" />
+      <Button fx:id="searchForPersonBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#searchForPerson" text="Search For Person" />
+      <Button fx:id="searchForTaskBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#searchForTask" text="Search For Task" />
+      <Separator prefWidth="200.0" />
+      <Button fx:id="clearDBBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clearDB" text="Clear Database" />
+	</children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</VBox>

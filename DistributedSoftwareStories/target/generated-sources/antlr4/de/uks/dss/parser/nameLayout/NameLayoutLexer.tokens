@@ -1,0 +1,9 @@
+ANYCHARS=5
+LT=4
+LBRACKET=2
+RBRACKET=1
+GT=3
+'>'=3
+'<'=4
+')'=1
+'('=2
